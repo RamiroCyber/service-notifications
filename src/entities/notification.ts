@@ -1,7 +1,11 @@
+import { ContentNotification } from "./content-notification";
+
 export interface INotification {
-  content: string;
+  content: ContentNotification;
   category: string;
-  readAt? : Date
+  readAt?: Date | null;
+  createdAt: Date;
+  recipientId: string;
 }
 
 export class Notification {
@@ -11,11 +15,39 @@ export class Notification {
     this.notification = notification;
   }
 
-  public set content(content: string) {
+  public get content(): ContentNotification{
+    return this.notification.content;
+  }
+
+  public set content(content: ContentNotification) {
     this.notification.content = content;
   }
 
-  public get content(): string {
-    return this.notification.content;
+  public get category(): string {
+    return this.notification.category;
+  }
+
+  public set category(category: string) {
+    this.notification.category = category;
+  }
+
+  public get readAt(): Date | null | undefined {
+    return this.notification.readAt;
+  }
+
+  public set readAt(readAt: Date | null | undefined) {
+    this.notification.readAt = readAt;
+  }
+
+  public get createdAt(): Date {
+    return this.notification.createdAt;
+  }
+
+  public set recipientId(recipientId: string) {
+    this.notification.recipientId = recipientId;
+  }
+
+  public get recipientId(): string {
+    return this.notification.recipientId;
   }
 }
