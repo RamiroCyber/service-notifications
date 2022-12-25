@@ -14,6 +14,6 @@ export class ContentNotification {
   }
 
   private validContent(content: string): boolean {
-    return content.length >= 5 && content.length <= 300;
+    return content.length <= 300;
   }
 }
