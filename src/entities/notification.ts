@@ -4,7 +4,7 @@ export interface INotification {
   content: ContentNotification;
   category: string;
   readAt?: Date | null;
-  createdAt: Date;
+  createdAt?: Date | null;
   recipientId: string;
 }
 
@@ -39,7 +39,7 @@ export class Notification {
     this.notification.readAt = readAt;
   }
 
-  public get createdAt(): Date {
+  public get createdAt(): Date | null | undefined  {
     return this.notification.createdAt;
   }
 
