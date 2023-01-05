@@ -1,7 +1,7 @@
 
 ## Description
 
-[Nest]Estudo de nest.js com prisma
+[Nest]Estudo de nest.js com prisma aplicando boas praticas 
 
 ## Installation
 
