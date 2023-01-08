@@ -1,4 +1,4 @@
-import { ContentNotification } from "./content-notification";
+import { ContentNotification } from "./contentNotification";
 
 export interface INotification {
   content: ContentNotification;

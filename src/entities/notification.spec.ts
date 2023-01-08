@@ -1,5 +1,5 @@
 import { Notification } from "./notification";
-import { ContentNotification } from "./content-notification";
+import { ContentNotification } from "./contentNotification";
 
 
 describe("Teste notification",()=>{

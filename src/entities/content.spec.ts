@@ -1,4 +1,4 @@
-import { ContentNotification } from "./content-notification";
+import { ContentNotification } from "./contentNotification";
 
 
 describe("Teste content",()=>{
